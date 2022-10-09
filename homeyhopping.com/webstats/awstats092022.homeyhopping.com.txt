@@ -1,0 +1,351 @@
+AWSTATS DATA FILE 7.7 (build 20161204)
+# If you remove this file, all statistics for date 202209 will be lost/reset.
+# Last config file used to build this data file was /etc/awstats/awstats.homeyhopping.com.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 28
+POS_GENERAL 1999                
+POS_TIME 2680                
+POS_VISITOR 3452                
+POS_DAY 5465                
+POS_DOMAIN 5640                
+POS_LOGIN 6023                
+POS_ROBOT 6178                
+POS_WORMS 6536                
+POS_EMAILSENDER 6667                
+POS_EMAILRECEIVER 6810                
+POS_SESSION 6886                
+POS_SIDER 7053                
+POS_FILETYPES 7276                
+POS_DOWNLOADS 7360                
+POS_OS 7408                
+POS_BROWSER 7621                
+POS_SCREENSIZE 8477                
+POS_UNKNOWNREFERER 8551                
+POS_UNKNOWNREFERERBROWSER 8724                
+POS_ORIGIN 8806                
+POS_SEREFERRALS 8938                
+POS_PAGEREFS 9082                
+POS_SEARCHWORDS 9230                
+POS_KEYWORDS 9382                
+POS_MISC 2344                
+POS_ERRORS 9441                
+POS_CLUSTER 5879                
+POS_SIDER_404 9544                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20221001004158 120 28943 8586263812523
+FirstTime 20220929053636
+LastTime 20220930234023
+LastUpdate 20221001045028 120 0 119 0 0
+TotalVisits 51                  
+TotalUnique 50                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 50                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 0 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 0 0 0 0 0 0
+1 1 1 23349 0 0 0
+2 0 0 0 0 0 0
+3 0 0 0 0 0 0
+4 0 0 0 0 0 0
+5 7 7 230399 5 7 382919
+6 6 6 340962 0 4 103171
+7 2 2 113654 0 0 0
+8 11 11 477965 0 2 0
+9 1 1 23349 0 0 0
+10 1 1 23349 6 6 313302
+11 1 1 23349 0 0 0
+12 6 6 384569 0 0 0
+13 2 2 46698 0 1 0
+14 0 0 0 1 1 23349
+15 4 4 93396 4 12 77680
+16 9 9 588528 0 0 0
+17 0 0 0 0 0 0
+18 3 3 270915 0 0 0
+19 2 2 46698 1 1 23349
+20 3 3 70047 0 1 0
+21 10 10 498223 1 6 210320
+22 5 5 384569 0 1 19371
+23 3 3 17559 0 0 0
+END_TIME
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 50
+54.36.162.160 10 10 722440 20220930165800
+51.91.125.152 5 5 361220 20220930125919
+51.195.216.255 5 5 361220 20220930212858
+20.219.137.176 4 4 180798 20220930234023
+167.248.133.119 2 2 46698 20220929054646
+46.101.164.72 2 2 46698 20220929060109
+168.119.89.246 2 2 46698 20220930160737
+106.75.4.49 2 2 46698 20220930154904
+106.75.2.164 2 2 46698 20220930154514
+35.187.228.71 2 2 180610 20220930225554
+135.148.195.5 1 1 23349 20220930081905
+172.93.239.79 1 1 90305 20220929071702
+44.236.207.248 1 1 23349 20220929055212
+54.203.73.198 1 1 23349 20220929055224
+152.39.211.164 1 1 23349 20220930204055
+60.144.31.152 1 1 90305 20220929210323
+146.148.30.195 1 1 23349 20220929091906
+176.113.42.191 1 1 23349 20220930192326
+35.166.243.184 1 1 23349 20220930080049
+20.65.60.75 1 1 23349 20220929055259
+185.181.60.12 1 1 23349 20220930130613
+54.69.196.51 1 1 0 20220930212514
+198.92.97.36 1 1 23349 20220929053636
+74.85.208.242 1 1 23349 20220930204233
+54.86.62.211 1 1 0 20220929210316
+54.36.115.93 1 1 23349 20220930224233
+3.142.45.132 1 1 23349 20220930203055
+124.70.139.194 1 1 23349 20220930101532
+35.86.153.28 1 1 23349 20220929083018
+5.181.234.157 1 1 23349 20220929064918
+51.254.49.100 1 1 90305 20220930182237
+76.22.230.83 1 1 90305 20220929060022
+35.85.219.252 1 1 0 20220929083018
+195.211.77.140 1 1 90305 20220929054601
+159.203.118.28 1 1 23349 20220930210212
+51.255.62.10 1 1 90305 20220930162229
+111.7.100.24 1 1 23349 20220929112115
+54.213.218.204 1 1 23349 20220930212515
+54.149.139.246 1 1 23349 20220930080049
+218.220.195.22 1 1 90305 20220929060031
+66.56.90.14 1 1 23349 20220930122530
+54.188.4.19 1 1 23349 20220930012224
+95.105.125.131 1 1 23349 20220930135631
+51.255.62.15 1 1 90305 20220930162225
+38.108.182.5 1 1 23349 20220929072606
+142.234.139.22 1 1 90305 20220929060601
+95.177.177.25 1 1 17371 20220930233743
+58.17.6.9 1 1 23349 20220930192806
+135.148.195.16 1 1 23349 20220930082000
+27.0.175.221 2 2 180610 20220930180938
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20220929 21 21 845367 19
+20220930 56 56 2812211 32
+END_DAY
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 12
+us 30 30 918693
+fr 14 14 1016704
+gb 10 10 722440
+cn 7 7 163443
+de 4 4 93396
+ru 3 3 137003
+jp 2 2 180610
+es 2 2 180610
+sg 2 2 180610
+no 1 1 23349
+be 1 1 23349
+sa 1 1 17371
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 6
+unknown 4 222 20220930154912 4
+curl 4 312806 20220930103049 0
+Apache\-HttpClient/ 2 46698 20220929210316 0
+(firefox/)([0-9]\.|[0-1][0]\.) 2 180610 20220929054752 0
+python 1 23349 20220930140439 0
+java 1 23349 20220930192805 0
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Session range - Number of visits
+BEGIN_SESSION 3
+30s-2mn 3
+0s-30s 47
+30mn-1h 1
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 3
+/ 74 3386663 48 48
+http://www.homeyhopping.com:80/ 2 180610 2 2
+http://homeyhopping.com:80/ 1 90305 1 1
+END_SIDER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 1
+html 77 3657578 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 12
+linuxandroid 1 1
+winxp 1 1
+macosx11 1 1
+ios_iphone 1 1
+winnt 3 3
+linux 13 13
+win7 7 7
+macosx 2 2
+bsdopenbsd 1 1
+win10 44 44
+Unknown 2 2
+win8.1 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 38
+chrome58.0.886 1 1
+chrome84.0.4147.89 2 2
+chrome41.0.2225.0 1 1
+chrome106.0.5249.61 1 1
+edge12 8 8
+firefox52.0 2 2
+chrome97.0.4692.99 2 2
+firefox106.0 1 1
+chrome36.0.1985.125 1 1
+chrome89.0.4389.114 4 4
+chrome70.0.2727.88 1 1
+chrome58.0.829 1 1
+chrome79.0.3945.130 1 1
+chrome34.0.1847.116 1 1
+chrome21.0.1180.83 3 3
+chrome91.0.4472.114 1 1
+chrome56.0.2924.76 2 2
+chrome74.0.3729.169 3 3
+chrome55.0.672 1 1
+chrome11.0.697.0 1 1
+chrome72.0.3626.119 1 1
+safari10.0 1 1
+chrome76.0.3809.100 2 2
+chrome63.0.3239.132 6 6
+firefox21.0 2 2
+chrome101.0.4951.54 1 1
+firefox58.0 3 3
+chrome45.0.1603 1 1
+chrome63.0.3239.108 1 1
+mozilla 2 2
+chrome104.0.0.0 4 4
+chrome94.0.4606.61 1 1
+chrome83.0.4103.106 4 4
+chrome105.0.5195.127 1 1
+chrome102.0.5005.63 3 3
+chrome79.0 4 4
+chrome103.0.5060.134 1 1
+chrome40.0.2214.93 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 1
+Mozilla/5.0_(compatible;_CensysInspect/1.1;__https://about.censys.io/) 20220929054646
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 75 75
+From1 2 2
+From2 0 0
+From3 0 0
+From4 0 0
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+400 4 179456
+404 10 386971
+END_ERRORS
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 4
+/sitemap.xml 4 -
+/favicon.png 4 -
+http://homeyhopping.com:80/favicon.png 1 -
+/ads.txt 1 -
+END_SIDER_404
