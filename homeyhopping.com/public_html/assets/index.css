@@ -172,6 +172,18 @@ tr:nth-child(even) {
 	text-decoration: none;
 	line-height: 2vw;
 }
+.loadingButtons {
+	display: inline-block;
+	width: 100%;
+}
+.more {
+	width: 20%;
+	display: inline-block;
+}
+.all {
+	width: 20%;
+	display: inline-block;
+}
 .loadMore {
 	background-color: #d5edf6;
 	border-radius: 25px;
@@ -184,10 +196,10 @@ tr:nth-child(even) {
 	font-family: Tahoma, Trebuchet MS, sans-serif;
 	font-weight: 400;
 	font-size: 1vw;
-	margin-left: auto;
-	margin-right: auto;
 	margin-top: 1vw;
 	margin-bottom: 5vw;
+	margin-left: auto;
+	margin-right: auto;
 	min-height: 56px;
 	min-width: 120px;
 	opacity: .7;
@@ -250,8 +262,21 @@ tr:nth-child(even) {
 	td {
 		padding: 0px;
 	}
+	.loadingButtons {
+		width: 100%;
+	}
 	.loadMore {
 		font-size: 15px;
+	}
+	.more {
+		width: 20%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.all {
+		width: 20%;
+		margin-left: 5%;
+		margin-right: 5%;
 	}
 	.heading-text {
 		padding: 0;
