@@ -1,6 +1,6 @@
 # homey-hopping.com
 
-<a href="https://www.homeyhopping.com/index.php">https://www.homeyhopping.com</a>
+<a href="https://www.homeyhopping.com/index.php">Visit my site here!</a>
 
 A fully-automated responsive website that compiles current NYC rental listings from three distinct websites featuring Python's BeautifulSoup package. Through the use of three spiders, distinct .csv files are generated and parsed to update the to display results. The site is automatically updated using a cron job at the remote host for the spiders (PythonAnywhere).
 
