@@ -109,9 +109,9 @@ while temp < len(name):
     temp = temp + 1
 text = text + ending
 page.close()
-#with open('index.html','w') as page:
-#    page.write(text)
-#page.close()
+with open('index.html','w') as page:
+    page.write(text)
+page.close()
 with open('index.php','w') as page:
     page.write(text)
 page.close()
