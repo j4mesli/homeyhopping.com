@@ -116,10 +116,10 @@ with open('index.php','w') as page:
     page.write(text)
 page.close()
 print("DONE WITH CHANGING PAGE")
-host = 'ftp.homeyhopping.com'
-port = 21
-user = 'pythonanywhere@homeyhopping.com'
-password = 'BudderGod4466'
+host = ''
+port = 
+user = ''
+password = ''
 ftps = FTP_TLS()
 ftps.connect(host, port)
 # Output: '220 Server ready for new user.'
