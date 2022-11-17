@@ -1,7 +1,7 @@
+#!/usr/bin/python3.10
 import datetime
 import json
-import ftplib
-from ftplib import FTP_TLS
+from github import Github
 
 total = []
 with open('housingA.csv','r') as fileA:
@@ -21,7 +21,6 @@ with open('housingA.csv','r') as fileA:
             'area': x[6],
             'link': x[7]
         })
-        print(x)
         print("A #" + fileA.index(x) + " DONE")
 print("A DONE")
 with open('housingAF.csv','r') as fileAF:
@@ -41,7 +40,6 @@ with open('housingAF.csv','r') as fileAF:
             'area': x[6],
             'link': x[7]
         })
-        print(x)
         print("AF #" + fileAF.index(x) + " DONE")
 print("AF DONE")
 with open('housingNYROS.csv','r') as fileNYROS:
@@ -62,7 +60,6 @@ with open('housingNYROS.csv','r') as fileNYROS:
             'area': x[6],
             'link': x[7]
         })
-        print(x)
         counter += 1
         print("NYROS #" + str(counter) + " DONE")
 print("NYROS DONE")
@@ -96,6 +93,7 @@ if time.second < 10:
 else:
     second = str(time.second)
 updateTime = months[time.month - 1] + " " + str(time.day) + ", " + str(time.year) + " at " + hour + ":" + minute + ":" + second + " " + ampm +"."
+text = ""
 with open('table.ejs','r') as page:
     for line in page:
         line = line.replace(',,',', ,')
@@ -107,26 +105,25 @@ with open('table.ejs','r') as page:
 with open('table.ejs','w') as page:
     page.write(text)
 print("DONE WITH CHANGING PAGE")
-with open('keysHH.txt','w') as keys:
-    host = keys[0]
-    port = keys[1]
-    user = keys[2]
-    password = keys[3]
-ftps = FTP_TLS()
-ftps.connect(host, port)
-# Output: '220 Server ready for new user.'
-ftps.login(user, password)
-# Output: '230 User usr logged in.'
-list = ftps.nlst()
-for i in list:
-    if i == "index.php":
-        ftpDelete = ftps.delete("index.php")
-file = open('table.ejs','rb')
-ftps.storbinary('STOR table.ejs', file)
-list = ftps.nlst()
-file = open('entries.json','rb')
-ftps.storbinary('STOR entries.json', file)
-print(list)
-# Output: ['mysubdirectory', 'mydoc']
-ftps.quit()
-print("DONE CERT")
+
+# GitHub
+g = Github("")
+repo = g.get_user().get_repo("homeyhopping-prod")
+table = repo.get_contents('views/partials/home/table.ejs')
+jsonFile = repo.get_contents('public/json/entries.json')
+print(repo)
+print(jsonFile)
+print(table)
+jsondata = ""
+for i in total:
+    temp = json.dumps(i)
+    if jsondata == "":
+        jsondata = jsondata + temp
+    else:
+        jsondata = jsondata + "," + temp
+# update ejs
+repo.update_file(table.path, "committing files", text, table.sha, branch="main")
+print("table done")
+# update json
+repo.update_file(jsonFile.path, "committing files", jsondata, jsonFile.sha, branch="main")
+print("json done")
