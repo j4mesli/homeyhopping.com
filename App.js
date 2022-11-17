@@ -24,9 +24,9 @@ app.get('/', (req, res) => {
     });
 });
 // // send
-app.get('/send', (req, res) => {
-    res.render('send', {
-        title: 'SEND LISTING',
+app.get('/subscribe', (req, res) => {
+    res.render('subscribe', {
+        title: 'SUBSCRIBE',
     });
 });
 
