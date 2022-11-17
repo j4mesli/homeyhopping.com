@@ -1,7 +1,6 @@
 {
   "scripts": {
-    "start": "node src/App.js",
-    "build": "building environment..."
+    "start": "nodemon App.js"
   },
   "dependencies": {
     "ejs": "^3.1.8",
