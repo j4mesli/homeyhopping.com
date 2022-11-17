@@ -1,0 +1,28 @@
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/index.css">
+    <link rel="stylesheet" href="/blackice.css">
+    <title>Homey Hopping | <%= title %></title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/hhlogo1.ico">
+    <script src="/js/jQuery.js"></script>
+    <script src="/js/tablesorter.js"></script>
+    <script src="/js/tablesorter widgets.js"></script>
+    <script>
+        // jQuery tablesorter
+        $(document).ready(function() {
+            $("#daTable").tablesorter({ 
+                theme: 'blackice',
+                widgets : ["zebra", "columns"],
+                widgetOptions : {
+                // change the default column class names
+                // primary is the first column sorted, secondary is the second, etc
+                columns : [ "primary", "secondary", "tertiary" ],
+                // include thead when adding class names
+                columns_thead : true,
+                // include tfoot when adding class names
+                columns_tfoot : true
+                }
+            });
+        });
+    </script>
+</head>
