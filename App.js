@@ -3,7 +3,8 @@ const morgan = require('morgan');
 
 // create server
 const app = express();
-app.listen(3000, 'localhost', () => {
+const port = process.env.PORT || 3000;
+app.listen(port, () => {
     console.log("listening on http://localhost:3000");
 });
 
