@@ -94,36 +94,40 @@ else:
     second = str(time.second)
 updateTime = months[time.month - 1] + " " + str(time.day) + ", " + str(time.year) + " at " + hour + ":" + minute + ":" + second + " " + ampm +"."
 text = ""
-with open('table.ejs','r') as page:
+with open('heading.ejs','r') as page:
     for line in page:
         line = line.replace(',,',', ,')
         if "dateTime" in line:
-            line = "				<h5 class=\"menuTitle\" style=\"color: #202020; margin-bottom: -1vw;\">Last Updated On: <span id='dateTime'>" + updateTime +"</span></h5>\n"
+            line = "				<h5 class=\"menuTitle\" style=\"color: #202020; margin-bottom: 0vw;\">Last Updated On: <span id='dateTime'>" + updateTime +"</span></h5>\n"
         elif "<tbody>" in line:
             break
         text = text + line
-with open('table.ejs','w') as page:
+with open('heading.ejs','w') as page:
     page.write(text)
 print("DONE WITH CHANGING PAGE")
 
 # GitHub
 g = Github("")
 repo = g.get_user().get_repo("homeyhopping-prod")
-table = repo.get_contents('views/partials/home/table.ejs')
+heading = repo.get_contents('views/partials/heading.ejs')
 jsonFile = repo.get_contents('public/json/entries.json')
 print(repo)
 print(jsonFile)
-print(table)
+print(heading)
 jsondata = ""
+count = 0
 for i in total:
+    count = count + 1
     temp = json.dumps(i)
     if jsondata == "":
-        jsondata = jsondata + temp
+        jsondata = "[" + jsondata + temp
+    elif count == len(total):
+        jsondata = jsondata + "," + temp + "]"
     else:
         jsondata = jsondata + "," + temp
 # update ejs
-repo.update_file(table.path, "committing files", text, table.sha, branch="main")
-print("table done")
+repo.update_file(heading.path, "committing files", text, heading.sha, branch="main")
+print("heading done")
 # update json
 repo.update_file(jsonFile.path, "committing files", jsondata, jsonFile.sha, branch="main")
 print("json done")
