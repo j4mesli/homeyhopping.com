@@ -2,7 +2,7 @@
 
 <a href="https://homeyhopping.onrender.com/" target="_blank">Visit my site here!</a>
 
-A fully-automated responsive website that compiles current NYC rental listings from three distinct websites featuring Node.js and Python's BeautifulSoup package. Through the use of three spiders, distinct .csv files are generated and parsed to update the to display results. The site is automatically updated once a day using a cron job at the remote host for the spiders (PythonAnywhere).
+A fully-automated responsive website that compiles current NYC rental listings from three distinct websites featuring Node.js and Python's BeautifulSoup package. Through the use of three spiders, distinct .csv files are generated and parsed to update the search results. The site is automatically updated once a day using a cron job at the remote host for the spiders (PythonAnywhere).
 
 **NOTE: THIS SITE WAS MIGRATED OVER FROM SITEGROUND TO RENDER.COM TO ACCOMODATE FOR NODE.JS IMPLEMENTATION. HOWEVER, THE DOMAIN "HOMEYHOPPING.COM" WILL NOT BE AVAILABLE FOR USE TO CONNECT TO THIS SITE UNTIL DECEMBER 2nd, 2022.**
 
