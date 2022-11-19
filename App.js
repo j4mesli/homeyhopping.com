@@ -25,7 +25,7 @@ app.get('/', (req, res) => {
 });
 // // send
 app.get('/subscribe', (req, res) => {
-    res.redirect('/404');
+    res.status(302).redirect('/404');
 //     res.render('subscribe', {
 //         title: 'SUBSCRIBE',
 //     });
