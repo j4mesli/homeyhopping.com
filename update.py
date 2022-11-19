@@ -108,7 +108,7 @@ print("DONE WITH CHANGING PAGE")
 
 # GitHub
 g = Github("")
-repo = g.get_user().get_repo("homeyhopping-prod")
+repo = g.get_user().get_repo("homeyhopping.com")
 heading = repo.get_contents('views/partials/heading.ejs')
 jsonFile = repo.get_contents('public/json/entries.json')
 print(repo)
@@ -126,8 +126,8 @@ for i in total:
     else:
         jsondata = jsondata + "," + temp
 # update ejs
-repo.update_file(heading.path, "committing files", text, heading.sha, branch="main")
+repo.update_file(heading.path, "Automatic update to heading.ejs 'last updated on' span via GitHub API", text, heading.sha, branch="main")
 print("heading done")
 # update json
-repo.update_file(jsonFile.path, "committing files", jsondata, jsonFile.sha, branch="main")
+repo.update_file(jsonFile.path, "Automatic update to listings.json time span via GitHub API", jsondata, jsonFile.sha, branch="main")
 print("json done")
